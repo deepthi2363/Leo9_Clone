@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Clients from './components/Clients'
-import ExtraSections from './components/ExtraSections'
+import FooterTagline from "./components/FooterTagline";
 
 export default function App() {
   const [dark, setDark] = useState(true)
@@ -16,8 +15,8 @@ export default function App() {
       <Navbar dark={dark} setDark={setDark} />
       <main>
         <Hero />
-        <Clients />
-        <ExtraSections />
+        <FooterTagline />
+        
       </main>
     </div>
   )
