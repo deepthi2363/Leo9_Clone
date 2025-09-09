@@ -1,6 +1,14 @@
 import React from "react";
-import brand1 from "../assets/bmw.png";
 
+import bmw from "../assets/bmw.png";
+import eton from "../assets/eton.png";
+import huggies from "../assets/huggies.png";
+import kpit from "../assets/kpit.png";
+import pg from "../assets/P&G.png";
+import sony from "../assets/sony.png";
+import tata from "../assets/tata.png";
+
+const brands = [bmw, eton, huggies, kpit, pg, sony, tata];
 
 export default function FooterTagline() {
   return (
@@ -17,24 +25,26 @@ export default function FooterTagline() {
 
         {/* Logo Scroller */}
         <div className="relative overflow-hidden flex-1 mt-4 -ml-4">
-          <div className="flex w-max animate-scroll gap-12">
-            {/* First Cycle of Logos */}
-        <img src="../assets/bmw.png" alt="Brand 1" className="h-12" />
-        <img src="../assets/eton.png" alt="Brand 2" className="h-12" />
-        <img src="../assets/huggies.png" alt="Brand 3" className="h-12" />
-        <img src="../assets/kpit.png" alt="Brand 4" className="h-12" />
-        <img src="../assets/P&G.png" alt="Brand 5" className="h-12" />
-        <img src="../assets/sony.png" alt="Brand 5" className="h-12" />
-        <img src="../assets/tata.png" alt="Brand 5" className="h-12" />
+          <div className="flex w-max animate-scroll gap-12 items-center">
+            {/* First Cycle */}
+            {brands.map((logo, i) => (
+              <img
+                key={i}
+                src={logo}
+                alt={`Brand ${i + 1}`}
+                className="h-12 dark:filter dark:invert"
+              />
+            ))}
 
-            {/* Duplicate Logos for Seamless Loop */}
-        <img src="../assets/bmw.png" alt="Brand 1" className="h-12" />
-        <img src="../assets/eton.png" alt="Brand 2" className="h-12" />
-        <img src="../assets/huggies.png" alt="Brand 3" className="h-12" />
-        <img src="../assets/kpit.png" alt="Brand 4" className="h-12" />
-        <img src="../assets/P&G.png" alt="Brand 5" className="h-12" />
-        <img src="../assets/sony.png" alt="Brand 5" className="h-12" />
-        <img src="../assets/tata.png" alt="Brand 5" className="h-12" />
+            {/* Duplicate Cycle for seamless loop */}
+            {brands.map((logo, i) => (
+              <img
+                key={`dup-${i}`}
+                src={logo}
+                alt={`Brand duplicate ${i + 1}`}
+                className="h-12 dark:filter dark:invert"
+              />
+            ))}
           </div>
         </div>
 
