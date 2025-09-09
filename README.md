@@ -1,145 +1,147 @@
-# Leo9_Clone
+# Leo9 Clone
 
-Got it! I’ve drafted a **detailed README** that explicitly says this is a **clone of the Leo9 Studio website**, and explains the technologies used for each section like animation, navbar, Hero section, and footer. You can copy this directly:
+[Live Demo](https://leo9-clone-1.onrender.com)
 
----
-
-# 🦁 Leo9 Studio – Website Clone
-
-This project is a **clone of the official Leo9 Studio website**. It recreates the homepage with modern UI/UX features, animations, and a responsive layout.
-
-The purpose of this project is to practice **frontend development, responsive design, and interactive animations** using modern tools.
+A **full-featured clone of the Leo9 Studio website** built with React, Tailwind CSS, and modern frontend technologies. This project replicates the homepage, Hero section, Navbar, and animations for learning and portfolio purposes.
 
 ---
 
 ## **Table of Contents**
 
-* [Features](#features)
-* [Technologies](#technologies)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Project Structure](#project-structure)
-* [Deployment](#deployment)
-* [Contributing](#contributing)
-* [License](#license)
+1. [About the Project](#about-the-project)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Project Structure](#project-structure)
+5. [Screenshots / GIFs](#screenshots--gifs)
+6. [Installation & Setup](#installation--setup)
+7. [Deployment](#deployment)
+8. [Usage](#usage)
+
+---
+
+## **About the Project**
+
+This project is a frontend clone of [Leo9 Studio](https://leo9studio.com) created for **learning and portfolio purposes**. It includes:
+
+* Hero section with animations
+* Navbar with dark/light mode support
+* Responsive layout for desktop, tablet, and mobile
+* Particle and graphic animations
+* Interactive components with React
 
 ---
 
 ## **Features**
 
-* **Hero Section**
-
-  * Interactive lion animation created with **p5.js**.
-  * Text beside animation dynamically styled for **light/dark mode**.
-  * Smooth entrance animation for dots and lines forming the lion.
-
-* **Navbar**
-
-  * Responsive top navigation with brand logo and menu links.
-  * Dark/Light mode support.
-
-* **Footer**
-
-  * Horizontal scrolling brand logos using **CSS animations**.
-  * Transparent background with seamless looping effect.
-  * Dark mode filter applied for invert colors automatically.
-
-* **Responsive Design**
-
-  * Fully mobile-first design using **Tailwind CSS**.
-  * Flexbox and grid layout for consistent spacing and alignment.
-
-* **Animations**
-
-  * Lion animation built with **p5.js** for interactive drawing.
-  * Scroller uses **CSS keyframes animation** for continuous movement.
-  * Subtle transitions for hover and scroll effects.
+* Fully **responsive design**
+* **Dark mode** toggle (customized)
+* **Animated Hero section** with React animations
+* **Particles background**
+* Interactive **call-to-action buttons**
+* **SEO-ready** structure
+* Deployment-ready for **Render**
 
 ---
 
-## **Technologies**
+## **Tech Stack**
 
-* **React** – Component-based frontend development
-* **Tailwind CSS** – Responsive and utility-first styling
-* **p5.js** – Hero section interactive animation
-* **Vercel / Netlify** – Continuous deployment and hosting
-* **Git & GitHub** – Version control
-
----
-
-## **Installation**
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/leo9-website-clone.git
-cd leo9-website-clone
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
----
-
-## **Usage**
-
-Start development server:
-
-```bash
-npm start
-```
-
-* Visit `http://localhost:3000` in your browser.
-* Press **`D`** in the Hero section to toggle dark mode for the lion animation.
-* Scroll horizontally in the footer to see brand logos move seamlessly.
-
-Build for production:
-
-```bash
-npm run build
-```
+* **Frontend:** React.js, Vite
+* **Animations:** Framer Motion / Lottie
+* **Deployment:** Render
+* **Other Tools:** PostCSS, Autoprefixer
 
 ---
 
 ## **Project Structure**
 
 ```
-leo9-website-clone/
-├── public/                 # Static assets (images, favicon)
-├── src/
-│   ├── assets/             # Logos and images for brands and Hero
-│   ├── components/         # Navbar, HeroAnimation, FooterTagline, etc.
-│   ├── App.jsx
-│   └── index.jsx
-├── package.json
-├── tailwind.config.js
-├── README.md
+leo9clone/
+├─ public/
+│  ├─ index.html
+│  └─ assets/
+├─ src/
+│  ├─ components/
+│  │  ├─ Hero.js
+│  │  ├─ HeroAnimation.js
+│  │  ├─ Navbar.js
+│  │  └─ HeroParticles.js
+│  ├─ App.js
+│  ├─ index.js
+│  └─ styles/
+├─ package.json
+└─ README.md
+```
+
+---
+
+## **Screenshots / GIFs**
+
+### **Hero Section Animation**
+
+![Hero Section Animation](./screenshots/hero-animation.gif)
+
+### **Navbar with Dark/Light Mode**
+
+![Navbar Dark Mode](./screenshots/navbar-dark.png)
+![Navbar Light Mode](./screenshots/navbar-light.png)
+
+### **Responsive Layout**
+
+![Responsive Layout](./screenshots/responsive-layout.png)
+
+![Website light mode](image.png)
+![Website dark mode](image-1.png)
+![Responsive](image-2.png)
+---
+
+## **Installation & Setup**
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/yourusername/leo9clone.git
+cd leo9clone
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the project locally:
+
+```bash
+npm start
+```
+
+4. Open in browser:
+
+```
+http://localhost:3000
 ```
 
 ---
 
 ## **Deployment**
 
-### **Vercel**
+This project is deployed on **Render**:
 
-1. Push the repository to GitHub.
-2. Import it into [Vercel](https://vercel.com/).
-3. Vercel automatically detects React projects.
-4. Set build command: `npm run build` and output folder: `build`.
-5. Automatic redeploy occurs on every Git push.
+* **Live Demo:** [https://leo9-clone-1.onrender.com](https://leo9-clone-1.onrender.com)
+
+* **Steps for deployment on Render:**
+
+  1. Connect GitHub repo to Render
+  2. Set **Build Command**: `npm install && npm run build`
+  3. Deploy
+
+* Continuous Deployment: Every push to main branch triggers auto-deploy.
 
 ---
 
-## **Contributing**
+## **Usage**
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit changes: `git commit -m "Add feature"`
-4. Push branch: `git push origin feature/your-feature`
-5. Open a Pull Request
-
-
- add that?
+* Click buttons and links on the Hero section to test interactions.
+* Toggle **dark/light mode** using the Navbar switch.
+* Resize the browser to see the **responsive layout**.
+* Use this clone for ** learning purposes only**.
